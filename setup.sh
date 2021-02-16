@@ -12,8 +12,10 @@ if [ -d ~/.vim ]; then
     echo "[INFO] Rename .vim/ to .vim_temp/"
 fi
 
-mv ~/vim ~/.vim
-echo "[INFO] Change vim/ to .vim/"
+#mv ~/vim ~/.vim
+#echo "[INFO] Change vim_git/ to .vim/"
+cp -r ~/vim_git ~/.vim
+echo "[INFO] Copy vim_git/ to .vim/"
 
 echo "[INFO] Colorterm of terminal and tmux should be same."
 if [ -f ~/.tmux.conf ]; then
