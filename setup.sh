@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 if [ -f ~/.vimrc ]; then
 	echo "[WARNING] .vimrc already exists."
