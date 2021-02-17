@@ -22,8 +22,7 @@
   VIM Installation
   ----------------
   ```
-  <!-- git clone --recurse-submodules https://gitlab.com/unist_ssl/vim.git -->
-  git clone --recurse-submodules git@gitlab.com:ulis-in-unist/vim.git
+  git clone --recurse-submodules git@github.com:ulistar93/vim_git.git
   source ~/vim/setup.sh
   ```
 
