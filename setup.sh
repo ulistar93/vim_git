@@ -28,6 +28,9 @@ if [ -f ~/.tmux.conf ]; then
   fi
 else
   echo set -g default-terminal $TERM > ~/.tmux.conf
+  echo bind a set-window-option synchronize-panes\\\; display \"synchronize-panes \#\{?pane_synchronized,on,off\}\" >> ~/.tmux.conf
+  echo bind r source-file \~/.tmux.conf\\\; display \"Reload .tmux.conf\" >> ~/.tmux.conf
+  echo bind v setw mouse\\\; display \"mouse mode \#\{?mouse,on,off\}\" >> ~/.tmux.conf
   tmux source ~/.tmux.conf
 fi
 
