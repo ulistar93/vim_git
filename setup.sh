@@ -43,6 +43,10 @@ if [ -f ~/.bashrc ]; then
   else
     echo "[INFO] Already alias for tmux is registered in bashrc."
   fi
+  if [[ `uname -a` =~ 'WSL' ]]; then
+    echo alias wpwd=\'wslpath -w \$PWD\' >> ~/.bashrc
+    source ~/.bashrc
+  fi
 fi
 
 vim +PluginInstall +qall
