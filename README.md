@@ -1,3 +1,7 @@
+forked from https://github.com/gyeongchan-yun/.vim
+
+recommend to use `git clone --recursive`
+ 
  .vim
  ----
 
